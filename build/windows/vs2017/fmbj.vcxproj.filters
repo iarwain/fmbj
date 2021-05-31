@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{BDD43745-E4F4-F54D-B64F-59AF03E5CF84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{19666ED3-EE1B-1D44-BB22-B9BA9326DC79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scroll">
+      <UniqueIdentifier>{F8364337-89E6-0A43-9BD0-1F41FA8CA36A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inline">
+      <UniqueIdentifier>{8ABE7B6D-048E-0F45-B1A5-2F6ED79CB780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{48783522-771A-F94E-9B16-141F5B5A2C2F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\Scroll\Scroll.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollBase.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollEd.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\include\Scroll\ScrollObject.inl">
+      <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\data\config\CreationTemplate.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\fmbj.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\fmbjd.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\fmbjp.ini">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\data\config\SettingsTemplate.ini">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\fmbj.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Object.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\orxArchive.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\Scroll.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollBase.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollEd.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Scroll\ScrollObject.h">
+      <Filter>include\Scroll</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\fmbj.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
