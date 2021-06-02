@@ -2,19 +2,19 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{BDD43745-E4F4-F54D-B64F-59AF03E5CF84}</UniqueIdentifier>
+      <UniqueIdentifier>{1A7A2BE0-884D-A743-BAC0-C348D337C446}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{19666ED3-EE1B-1D44-BB22-B9BA9326DC79}</UniqueIdentifier>
+      <UniqueIdentifier>{A0ECFC48-7FD3-E741-BA26-D118BDDF6097}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\Scroll">
-      <UniqueIdentifier>{F8364337-89E6-0A43-9BD0-1F41FA8CA36A}</UniqueIdentifier>
+      <UniqueIdentifier>{F30560DE-5F8C-1C4F-BB41-4B0AD5392B03}</UniqueIdentifier>
     </Filter>
     <Filter Include="inline">
-      <UniqueIdentifier>{8ABE7B6D-048E-0F45-B1A5-2F6ED79CB780}</UniqueIdentifier>
+      <UniqueIdentifier>{A0CBFDA6-D804-F741-BA20-0AF11AE9C194}</UniqueIdentifier>
     </Filter>
     <Filter Include="config">
-      <UniqueIdentifier>{48783522-771A-F94E-9B16-141F5B5A2C2F}</UniqueIdentifier>
+      <UniqueIdentifier>{3C5C8610-CB29-4644-93B6-DBDA27337DCD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +50,12 @@
     <ClInclude Include="..\..\..\include\fmbj.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\ksnd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Mod.h">
+      <Filter>include</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\include\Object.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -71,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\fmbj.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Mod.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">

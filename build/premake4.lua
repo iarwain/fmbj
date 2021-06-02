@@ -104,6 +104,9 @@ solution "fmbj"
         "StaticRuntime"
     }
 
+    libdirs {"../lib"}
+    links {"ksnd"}
+
     configuration {"not xcode*"}
         includedirs {"$(ORX)/include"}
         libdirs {"$(ORX)/lib/dynamic"}
