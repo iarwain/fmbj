@@ -30,7 +30,6 @@ private:
 
                 KPlayer        *mpstPlayer;
                 KSong          *mpstSong;
-                orxSOUND_STATUS meStatus;
 };
 
 #endif // __MOD_H__

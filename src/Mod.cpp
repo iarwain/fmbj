@@ -11,8 +11,7 @@ void Mod::OnCreate()
 
   mpstPlayer  = orxNULL;
   mpstSong    = orxNULL;
-  meStatus    = orxSOUND_STATUS_STOP;
-
+  
   zMod = orxResource_Locate("Mod", orxConfig_GetString("Mod"));
 
   if(zMod)
@@ -41,6 +40,8 @@ void Mod::OnCreate()
           if(orxResource_Read(hMod, s64Size, pu8Buffer, orxNULL, orxNULL) == s64Size)
           {
             mpstSong = KSND_LoadSongFromMemory(mpstPlayer, pu8Buffer, (int)s64Size);
+            UpdateMod();
+            KSND_PlaySong(mpstPlayer, mpstSong, 0);
           }
         }
 
@@ -74,58 +75,10 @@ void Mod::Update(const orxCLOCK_INFO &_rstInfo)
 
 void Mod::UpdateMod()
 {
-  if(mpstPlayer && mpstSong)
+  if(mpstPlayer)
   {
-    orxSOUND *pstSound;
-
-    pstSound = orxObject_GetLastAddedSound(GetOrxObject());
-
-    if(pstSound)
-    {
-      orxSOUND_STATUS eNewStatus;
-
-      KSND_SetVolume(mpstPlayer, (int)(128.0f * orxSound_GetVolume(pstSound) * orxSound_GetBusGlobalVolume(orxSound_GetBusID(pstSound))));
-
-      eNewStatus = orxSound_GetStatus(pstSound);
-
-      switch(eNewStatus)
-      {
-        case orxSOUND_STATUS_PLAY:
-        {
-          // Stopped?
-          if(meStatus == orxSOUND_STATUS_STOP)
-          {
-            KSND_PlaySong(mpstPlayer, mpstSong, 0);
-          }
-          else if(meStatus == orxSOUND_STATUS_PAUSE)
-          {
-            KSND_Pause(mpstPlayer, 0);
-          }
-          break;
-        }
-
-        case orxSOUND_STATUS_PAUSE:
-        {
-          // Playing?
-          if(meStatus == orxSOUND_STATUS_PLAY)
-          {
-            KSND_Pause(mpstPlayer, 1);
-          }
-          break;
-        }
-
-        case orxSOUND_STATUS_STOP:
-        {
-          // Not stopped?
-          if(meStatus != orxSOUND_STATUS_STOP)
-          {
-            KSND_Stop(mpstPlayer);
-          }
-          break;
-        }
-      }
-
-      meStatus = eNewStatus;
-    }
+    PushConfigSection();
+    KSND_SetVolume(mpstPlayer, (int)(128.0f * orxConfig_GetFloat("Volume") * orxSound_GetBusGlobalVolume(orxString_Hash(orxConfig_GetString("Bus")))));
+    PopConfigSection();
   }
 }
