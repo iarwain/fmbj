@@ -4,7 +4,7 @@ SFXR_DEFINE(U32, U32, WaveType)
 SFXR_DEFINE(Float, FLOAT, BaseFrequency)
 SFXR_DEFINE(Float, FLOAT, FrequencyLimit)
 SFXR_DEFINE(Float, FLOAT, FrequencyRamp)
-SFXR_DEFINE(Float, FLOAT, FrequencyDeltaramp)
+SFXR_DEFINE(Float, FLOAT, FrequencyDeltaRamp)
 
 SFXR_DEFINE(Float, FLOAT, Duty)
 SFXR_DEFINE(Float, FLOAT, DutyRamp)
