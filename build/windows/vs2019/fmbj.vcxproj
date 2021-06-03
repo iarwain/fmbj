@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{502411D0-B373-664D-AF7A-4FE352156EB9}</ProjectGuid>
+    <ProjectGuid>{9C40B51D-3E17-DB48-8F7F-D0CB81C93C99}</ProjectGuid>
     <RootNamespace>fmbj</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -370,6 +370,7 @@
     <ClInclude Include="..\..\..\include\Mod.h" />
     <ClInclude Include="..\..\..\include\Object.h" />
     <ClInclude Include="..\..\..\include\orxArchive.h" />
+    <ClInclude Include="..\..\..\include\SFXR.h" />
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollBase.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollEd.h" />
@@ -382,6 +383,8 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
     </ClCompile>
+    <ClCompile Include="..\..\..\src\SFXR.cpp">
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\Scroll\Scroll.inl" />
@@ -392,6 +395,7 @@
     <None Include="..\..\..\data\config\fmbj.ini" />
     <None Include="..\..\..\data\config\fmbjd.ini" />
     <None Include="..\..\..\data\config\fmbjp.ini" />
+    <None Include="..\..\..\data\config\mod.ini" />
     <None Include="..\..\..\data\config\SettingsTemplate.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

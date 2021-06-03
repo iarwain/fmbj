@@ -9,6 +9,7 @@
 
 #include "Object.h"
 #include "Mod.h"
+#include "SFXR.h"
 
 #define orxARCHIVE_IMPL
 #include "orxArchive.h"
@@ -75,6 +76,7 @@ void fmbj::BindObjects()
   // Bind the Object class to the Object config section
   ScrollBindObject<Object>("Object");
   ScrollBindObject<Mod>("Mod");
+  ScrollBindObject<SFXR>("SFXR");
 }
 
 /** Bootstrap function, it is called before config is initialized, allowing for early resource storage definitions

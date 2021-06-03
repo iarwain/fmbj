@@ -2,19 +2,19 @@
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{F6003A27-7647-7C41-8AD8-D7498FDDFA54}</UniqueIdentifier>
+      <UniqueIdentifier>{385F8DE1-63DB-424D-855A-7A5237D68A18}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{AFA608EC-B7E5-EA40-BA1A-2BF0F699EE4F}</UniqueIdentifier>
+      <UniqueIdentifier>{D32FC4AF-A4B3-3C4D-A8E5-CAF83426F1FC}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\Scroll">
-      <UniqueIdentifier>{802994C7-7C42-BA4D-95D6-9D8EDD52E22E}</UniqueIdentifier>
+      <UniqueIdentifier>{27CBA29A-D5EA-CA4A-9771-632AEEEB2811}</UniqueIdentifier>
     </Filter>
     <Filter Include="inline">
-      <UniqueIdentifier>{6CBD3402-8274-3B4E-A163-66266F02438D}</UniqueIdentifier>
+      <UniqueIdentifier>{FDA1F4D4-3273-074F-BDCC-0AB84060B131}</UniqueIdentifier>
     </Filter>
     <Filter Include="config">
-      <UniqueIdentifier>{F935FA06-4EBD-774C-B6FE-FCEF1259FE23}</UniqueIdentifier>
+      <UniqueIdentifier>{BDAB4908-38E9-F54B-8FF5-2B68C5243290}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +42,9 @@
     <None Include="..\..\..\data\config\fmbjp.ini">
       <Filter>config</Filter>
     </None>
+    <None Include="..\..\..\data\config\mod.ini">
+      <Filter>config</Filter>
+    </None>
     <None Include="..\..\..\data\config\SettingsTemplate.ini">
       <Filter>config</Filter>
     </None>
@@ -60,6 +63,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\include\orxArchive.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\SFXR.h">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h">
@@ -83,6 +89,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\SFXR.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
