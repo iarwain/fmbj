@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9C40B51D-3E17-DB48-8F7F-D0CB81C93C99}</ProjectGuid>
+    <ProjectGuid>{F68D0202-D358-394A-A050-BC8F487ED6CF}</ProjectGuid>
     <RootNamespace>fmbj</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -370,7 +370,6 @@
     <ClInclude Include="..\..\..\include\Mod.h" />
     <ClInclude Include="..\..\..\include\Object.h" />
     <ClInclude Include="..\..\..\include\orxArchive.h" />
-    <ClInclude Include="..\..\..\include\SFXR.h" />
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollBase.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollEd.h" />
@@ -382,8 +381,6 @@
     <ClCompile Include="..\..\..\src\Mod.cpp">
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\SFXR.cpp">
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

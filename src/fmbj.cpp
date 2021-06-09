@@ -9,7 +9,6 @@
 
 #include "Object.h"
 #include "Mod.h"
-#include "SFXR.h"
 
 #define orxARCHIVE_IMPL
 #include "orxArchive.h"
@@ -76,7 +75,6 @@ void fmbj::BindObjects()
   // Bind the Object class to the Object config section
   ScrollBindObject<Object>("Object");
   ScrollBindObject<Mod>("Mod");
-  ScrollBindObject<SFXR>("SFXR");
 }
 
 /** Bootstrap function, it is called before config is initialized, allowing for early resource storage definitions
@@ -84,6 +82,7 @@ void fmbj::BindObjects()
 orxSTATUS fmbj::Bootstrap() const
 {
   // Add a config storage to find the initial config file
+  orxResource_AddStorage(orxCONFIG_KZ_RESOURCE_GROUP, "game.dat:config", orxFALSE);
   orxResource_AddStorage(orxCONFIG_KZ_RESOURCE_GROUP, "../data/config", orxFALSE);
 
   // Return orxSTATUS_FAILURE to prevent orx from loading the default config file

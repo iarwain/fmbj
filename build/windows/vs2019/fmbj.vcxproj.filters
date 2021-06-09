@@ -2,19 +2,19 @@
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{385F8DE1-63DB-424D-855A-7A5237D68A18}</UniqueIdentifier>
+      <UniqueIdentifier>{612DC8AD-7776-0848-B6D7-264EBD52844B}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{D32FC4AF-A4B3-3C4D-A8E5-CAF83426F1FC}</UniqueIdentifier>
+      <UniqueIdentifier>{4C2112CF-E1A5-5C43-888C-33CF42EA6AEA}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\Scroll">
-      <UniqueIdentifier>{27CBA29A-D5EA-CA4A-9771-632AEEEB2811}</UniqueIdentifier>
+      <UniqueIdentifier>{43BB26BF-765A-644D-90DC-EB9D9B2A98AD}</UniqueIdentifier>
     </Filter>
     <Filter Include="inline">
-      <UniqueIdentifier>{FDA1F4D4-3273-074F-BDCC-0AB84060B131}</UniqueIdentifier>
+      <UniqueIdentifier>{06F3E7A8-AFDB-8047-B05E-006A2AD4C8EB}</UniqueIdentifier>
     </Filter>
     <Filter Include="config">
-      <UniqueIdentifier>{BDAB4908-38E9-F54B-8FF5-2B68C5243290}</UniqueIdentifier>
+      <UniqueIdentifier>{D221DEB7-08C2-FE47-881B-0515B07B5E2C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -65,9 +65,6 @@
     <ClInclude Include="..\..\..\include\orxArchive.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\SFXR.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h">
       <Filter>include\Scroll</Filter>
     </ClInclude>
@@ -89,9 +86,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\SFXR.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
