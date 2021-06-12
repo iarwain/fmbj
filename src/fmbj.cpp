@@ -43,9 +43,6 @@ orxSTATUS fmbj::Init()
     "\n* You can play with the config parameters in ../data/config/fmbj.ini"
     "\n* After changing them, relaunch the executable to see the changes.");
 
-  // Initialize archive (ZIP) resource type
-  orxArchive_Init();
-
   // Create the scene
   CreateObject("Scene");
 
@@ -81,6 +78,9 @@ void fmbj::BindObjects()
  */
 orxSTATUS fmbj::Bootstrap() const
 {
+  // Initialize archive (ZIP) resource type
+  orxArchive_Init();
+
   // Add a config storage to find the initial config file
   orxResource_AddStorage(orxCONFIG_KZ_RESOURCE_GROUP, "game.dat:config", orxFALSE);
   orxResource_AddStorage(orxCONFIG_KZ_RESOURCE_GROUP, "../data/config", orxFALSE);
