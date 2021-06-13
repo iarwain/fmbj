@@ -2,19 +2,19 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{3695184B-37FE-B342-A47C-A599E461723D}</UniqueIdentifier>
+      <UniqueIdentifier>{8AB45BA9-5513-7F45-B6C9-60809D0C55B8}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{905AC781-5CAD-8542-BFFB-332FA599B2C1}</UniqueIdentifier>
+      <UniqueIdentifier>{ADA43477-6FF6-E14E-9056-05C399491D28}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\Scroll">
-      <UniqueIdentifier>{10F64795-CA38-8F44-B408-F0650B9D23D7}</UniqueIdentifier>
+      <UniqueIdentifier>{E0E1F0B2-40B8-7142-873D-948D36D94A9A}</UniqueIdentifier>
     </Filter>
     <Filter Include="inline">
-      <UniqueIdentifier>{C984E88A-A631-EB4C-83D7-1C15FF8FA7DE}</UniqueIdentifier>
+      <UniqueIdentifier>{EB1097C0-0150-6C42-B262-B6D7C3EF9261}</UniqueIdentifier>
     </Filter>
     <Filter Include="config">
-      <UniqueIdentifier>{DE0A9355-7140-CE49-A628-6817039F0207}</UniqueIdentifier>
+      <UniqueIdentifier>{DFDACEA1-AC97-2948-9824-6D20BDEB5208}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,6 +29,9 @@
     </None>
     <None Include="..\..\..\include\Scroll\ScrollObject.inl">
       <Filter>inline</Filter>
+    </None>
+    <None Include="..\..\..\data\config\character.ini">
+      <Filter>config</Filter>
     </None>
     <None Include="..\..\..\data\config\CreationTemplate.ini">
       <Filter>config</Filter>
@@ -45,11 +48,17 @@
     <None Include="..\..\..\data\config\mod.ini">
       <Filter>config</Filter>
     </None>
+    <None Include="..\..\..\data\config\player.ini">
+      <Filter>config</Filter>
+    </None>
     <None Include="..\..\..\data\config\SettingsTemplate.ini">
       <Filter>config</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\Character.h">
+      <Filter>include</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\include\fmbj.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -63,6 +72,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\include\orxArchive.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\Player.h">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h">
@@ -79,6 +91,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\src\Character.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\fmbj.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -86,6 +101,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Player.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

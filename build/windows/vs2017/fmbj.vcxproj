@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C689B42D-1089-0F45-8F62-2781B768FA91}</ProjectGuid>
+    <ProjectGuid>{89AB0AF6-E306-8F49-83B9-87B114E45061}</ProjectGuid>
     <RootNamespace>fmbj</RootNamespace>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
@@ -365,22 +365,28 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\Character.h" />
     <ClInclude Include="..\..\..\include\fmbj.h" />
     <ClInclude Include="..\..\..\include\ksnd.h" />
     <ClInclude Include="..\..\..\include\Mod.h" />
     <ClInclude Include="..\..\..\include\Object.h" />
     <ClInclude Include="..\..\..\include\orxArchive.h" />
+    <ClInclude Include="..\..\..\include\Player.h" />
     <ClInclude Include="..\..\..\include\Scroll\Scroll.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollBase.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollEd.h" />
     <ClInclude Include="..\..\..\include\Scroll\ScrollObject.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\src\Character.cpp">
+    </ClCompile>
     <ClCompile Include="..\..\..\src\fmbj.cpp">
     </ClCompile>
     <ClCompile Include="..\..\..\src\Mod.cpp">
     </ClCompile>
     <ClCompile Include="..\..\..\src\Object.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Player.cpp">
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -388,11 +394,13 @@
     <None Include="..\..\..\include\Scroll\ScrollBase.inl" />
     <None Include="..\..\..\include\Scroll\ScrollEd.inl" />
     <None Include="..\..\..\include\Scroll\ScrollObject.inl" />
+    <None Include="..\..\..\data\config\character.ini" />
     <None Include="..\..\..\data\config\CreationTemplate.ini" />
     <None Include="..\..\..\data\config\fmbj.ini" />
     <None Include="..\..\..\data\config\fmbjd.ini" />
     <None Include="..\..\..\data\config\fmbjp.ini" />
     <None Include="..\..\..\data\config\mod.ini" />
+    <None Include="..\..\..\data\config\player.ini" />
     <None Include="..\..\..\data\config\SettingsTemplate.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
