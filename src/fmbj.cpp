@@ -8,6 +8,8 @@
 #undef __SCROLL_IMPL__
 
 #include "Object.h"
+#include "Character.h"
+#include "Player.h"
 #include "Mod.h"
 
 #define orxARCHIVE_IMPL
@@ -71,6 +73,8 @@ void fmbj::BindObjects()
 {
   // Bind the Object class to the Object config section
   ScrollBindObject<Object>("Object");
+  ScrollBindObject<Character>("Character");
+  ScrollBindObject<Player>("Player");
   ScrollBindObject<Mod>("Mod");
 }
 

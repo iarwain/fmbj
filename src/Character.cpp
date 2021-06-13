@@ -60,7 +60,7 @@ void Character::Update(const orxCLOCK_INFO &_rstInfo)
         if(!orxConfig_GetBool("IsDashing"))
         {
             // Gets move vector
-            orxVECTOR vMove = {orxInput_GetValue("Right") - orxInput_GetValue("Left"), orxInput_GetValue("Down") - orxInput_GetValue("Up"), orxFLOAT_0};
+            orxVECTOR vMove = {orxInput_GetValue("Right") - orxInput_GetValue("Left"), orxFLOAT_0, orxFLOAT_0};
             orxVector_FromCartesianToSpherical(&vMove, &vMove);
             vMove.fRho = orxMIN(vMove.fRho, orxFLOAT_1);
 
