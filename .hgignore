@@ -4,3 +4,4 @@ bin/*
 **/.vs/*
 **/obj/*
 build/**/*.log
+*.sublime-workspace
