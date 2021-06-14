@@ -21,6 +21,8 @@ protected:
                 void            OnDelete();
                 void            Update(const orxCLOCK_INFO &Info);
 
+                const orxSTRING zInputSet;
+
 
 private:
 };

@@ -12,7 +12,7 @@ void Player::OnCreate()
 
     // Enable its physical inputs
     const orxSTRING zSet = orxInput_GetCurrentSet();
-    orxInput_SelectSet(orxConfig_GetString("Input"));
+    orxInput_SelectSet(zInputSet);
     orxInput_SetTypeFlags(orxINPUT_KU32_MASK_TYPE_ALL, orxINPUT_KU32_FLAG_TYPE_NONE);
     orxInput_SelectSet(zSet);
 
@@ -22,6 +22,8 @@ void Player::OnCreate()
 
 void Player::OnDelete()
 {
+    // Call parent method
+    Character::OnDelete();
 }
 
 void Player::Update(const orxCLOCK_INFO &_rstInfo)

@@ -12,7 +12,8 @@ void Character::OnCreate()
 
     // Enable its inputs
     const orxSTRING zSet = orxInput_GetCurrentSet();
-    orxInput_SelectSet(orxConfig_GetString("Input"));
+    zInputSet = orxConfig_GetString("Input");
+    orxInput_SelectSet(zInputSet);
     orxInput_EnableSet(orxInput_GetCurrentSet(), orxTRUE);
     orxInput_SetTypeFlags(orxINPUT_KU32_FLAG_TYPE_NONE, orxINPUT_KU32_MASK_TYPE_ALL);
     orxInput_SelectSet(zSet);
@@ -28,14 +29,8 @@ void Character::OnCreate()
 
 void Character::OnDelete()
 {
-    // Push config section
-    PushConfigSection();
-
-    // Disable its inputs
-    orxInput_EnableSet(orxConfig_GetString("Input"), orxFALSE);
-
-    // Pop config section
-    PopConfigSection();
+    // Removes its inputs
+    orxInput_RemoveSet(zInputSet);
 
     // Call parent method
     Object::OnDelete();
